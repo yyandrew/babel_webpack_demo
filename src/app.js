@@ -1,2 +1,5 @@
-let test = () => console.log('hello webpack');
-test()
+import { person, sayHello } from './lib'
+
+console.log(person.name)
+
+console.log(sayHello('Webpack'))
