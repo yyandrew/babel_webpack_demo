@@ -1,1 +1,2 @@
-let test = () => console.log('test');
+let test = () => console.log('hello webpack');
+test()
