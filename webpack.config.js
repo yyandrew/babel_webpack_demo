@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -17,5 +18,11 @@ module.exports = {
                 presets: ['env']
             }
         }]
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ],
+    devServer: {
+      hot: true
     }
 }
